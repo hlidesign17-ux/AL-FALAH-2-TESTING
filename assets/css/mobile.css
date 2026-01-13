@@ -1,0 +1,136 @@
+@media (max-width: 768px) {
+  .sambutan-container {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: -10px;
+  }
+
+  .sambutan-foto {
+    margin-top: -50px; /* mengatur jarak foto dengan hero */
+    margin-bottom: -80px; /* mengatur jarak foto dengan sambutan */
+  }
+
+  .sambutan-isi h2 {
+    /* ini tempat sambutan kepala sekolah diketik */
+    /*  display: none; hilangkan komentar jika ingin hilangkan kata sambutan */
+    /*   line-height: 0px; */
+    font-size: 6cqw;
+    text-align: center;
+    white-space: nowrap;
+    color: #0f5132; /* hijau wibawa */
+    margin-bottom: 10px; /* atur disini agar tulisan Sambutan kepala sekolah
+  dan assalamualaikum lebih dekat jaraknya */
+  }
+
+  .sambutan-teks {
+    text-align: justify;
+    font-style: italic;
+    text-justify: inter-word;
+    line-height: 1.2;
+    margin-bottom: 0px;
+    text-indent: 15px;
+  }
+
+  .sambutan-identitas strong {
+    /* Utomo Widyanto */
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .sambutan-identitas span {
+    text-decoration: none;
+  }
+  /* MEMBUAT HERO TAMPIL PENUH DILAYAR */
+  .hero {
+    min-height: 100svh;
+  }
+
+  /*  ====================================================================================== */
+  /* ==================================================MENU BAWAH OPENING */
+
+  /* Sembunyikan menu desktop */
+  .menu-navigasi {
+    display: none;
+  }
+
+  /* HEADER BAWAH */
+  .bottom-header {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    display: block;
+    background: linear-gradient(135deg, #0f5132, #029f49);
+  }
+
+  .header-container {
+    justify-content: center;
+  }
+
+  /* CONTAINER */
+  .bottom-header-container {
+    height: 70px; /* lebih nyaman */
+    padding: 8px 12px;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center; /* KUNCI: center vertikal */
+    justify-content: space-between;
+  }
+
+  /* ITEM MENU */
+  .bottom-header-container a {
+    flex: 1;
+    transition: transform 0.15s ease, background 0.2s ease, color 0.2s ease;
+    display: flex; /* KUNCI */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* KUNCI */
+    gap: 3px;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1; /* KUNCI */
+
+    min-width: 44px; /* standar mobile */
+    padding: 6px 0;
+  }
+
+  .bottom-header-container a:active {
+    transform: scale(0.92);
+    color: #ffffff;
+  }
+
+  /* ICON */
+  .bottom-header-container a i {
+    font-size: 18px;
+    line-height: 1; /* KUNCI */
+  }
+  /* WARNA ICON SAAT AKTIF */
+  .bottom-header-container a.active i {
+    color: #029f49; /* hijau cerah (kontras dengan putih) */
+  }
+  /* ==================================================MENU BAWAH CLOSING=============================== */
+
+  /* ===================================================================================================== */
+
+  /* ================================================KECILKAN SCROLL BAR OPENING========================== */
+  /* ================================================KECILKAN SCROLL BAR OPENING========================== */
+  /* Scrollbar tipis */
+  ::-webkit-scrollbar {
+    width: 5px; /* mengatur lebar dari sisi tepi scrollbar */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #fccf02; /* mengatur warna dari scroll barnya */
+    border-radius: 999px;
+  }
+
+  /* BUTTON LIHAT SEMUA */
+}

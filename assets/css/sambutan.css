@@ -1,0 +1,73 @@
+/* SECTION SAMBUTAN */
+.sambutan {
+  padding: 80px 24px;
+  background: linear-gradient(180deg, #ffffff 0%, #f3faf6 100%);
+  /* background-color: #333333; */
+  border-radius: 40px 40px 40px 40px;
+  /* margin-top: -40px; */
+}
+
+/* CONTAINER */
+.sambutan-container {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+
+/* FOTO KEPALA SEKOLAH */
+.sambutan-foto {
+  flex: 0 0 260px;
+  display: flex;
+  justify-content: center;
+}
+
+.sambutan-foto img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+
+  background: #ffffff;
+  padding: 10px;
+
+  box-shadow: 0 12px 30px rgba(15, 81, 50, 0.25),
+    0 0 0 1px rgba(255, 255, 255, 0.25);
+}
+
+/* ISI SAMBUTAN == TEXT SAMBUTAN KEPALA SEKOLAH*/
+.sambutan-isi {
+  flex: 1;
+}
+
+.sambutan-isi h2 {
+  font-size: 2rem;
+  margin: 10px 0px;
+  color: #0f5132; /* hijau wibawa */
+  /* margin-bottom: -10px; */ /* atur disini agar tulisan Sambutan kepala sekolah
+  dan assalamualaikum lebih dekat jaraknya */
+}
+
+.sambutan-teks {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #333333;
+  margin-bottom: 0px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* IDENTITAS */
+.sambutan-identitas strong {
+  display: block;
+  font-size: 1.05rem;
+  /*  color: #029f49; */
+  color: #333333;
+}
+
+.sambutan-identitas span {
+  font-size: 0.95rem;
+  color: #555555;
+}

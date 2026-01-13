@@ -1,0 +1,72 @@
+.student-mode .student-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.student-mode .student-item {
+  padding: 14px 16px;
+  background: #f6f8fb;
+  border-radius: 10px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #222;
+  transition: 0.25s ease;
+  border-left: 4px solid #0f5132;
+}
+
+.student-mode .student-item:hover {
+  background: #eaf1ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.student-mode .student-item {
+  cursor: pointer;
+}
+
+.student-search {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* ===== PAGINATION SISWA ===== */
+.student-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.student-pagination button {
+  min-width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  border: 1px solid rgba(15, 81, 50, 0.2);
+  background: #f4fdf8;
+  color: #0f5132;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 16px rgba(15, 81, 50, 0.08);
+}
+
+.student-pagination button:hover {
+  background: #029f49;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(2, 159, 73, 0.25);
+}
+
+.student-pagination button.active {
+  background: #0f5132;
+  color: #fff;
+  border-color: #0f5132;
+  box-shadow: 0 10px 24px rgba(15, 81, 50, 0.35);
+  transform: translateY(-1px);
+}

@@ -1,0 +1,148 @@
+/* Overlay: hanya pembungkus, tidak menggelapkan layar */
+.beritalanjut-overlay {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: flex-start; /* penting */
+  padding-top: 80px; /* jarak dari atas */
+  z-index: 1000;
+  padding: 80px 20px; /* jarak atas & samping */
+  overflow-y: auto; /* ⬅️ INI KUNCINYA */
+}
+
+/* Aktif */
+.beritalanjut-overlay.active {
+  display: flex;
+}
+
+/* Box popup: konsep sama dengan profile-popup */
+.beritalanjut-popup {
+  background: #fff;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+  animation: popupScale 0.25s ease;
+}
+
+/* Animasi halus */
+@keyframes popupScale {
+  from {
+    transform: scale(0.96);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* =========================
+   DETAIL BERITA (POPUP)
+========================= */
+
+.berita-detail {
+  font-family: "Segoe UI", sans-serif;
+  color: #0f5132;
+  line-height: 1.75;
+  animation: fadeUp 0.4s ease;
+}
+
+/* Animasi masuk */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tombol kembali */
+.berita-back {
+  margin-top: 40px;
+  padding: 12px 22px;
+  background: #029f49;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px; /* rounded rectangle */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(2, 159, 73, 0.35);
+}
+
+.berita-back:hover {
+  background: #0f5132;
+  transform: translateY(-2px);
+}
+
+/* Judul */
+.berita-detail h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Meta info */
+.berita-meta {
+  font-size: 14px;
+  color: #029f49;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+/* =========================
+   FOTO BERITA
+========================= */
+
+.berita-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 25px;
+}
+
+.berita-images img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 14px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Efek hover halus */
+.berita-images img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 30px rgba(2, 159, 73, 0.25);
+}
+
+/* =========================
+   TEKS NARASI
+========================= */
+
+.berita-detail p {
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.berita-back {
+  margin-top: 35px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+  .beritalanjut-sidebar {
+    padding: 4px 0 8px;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #029f49 transparent; /* hijau | track */
+  }
+}

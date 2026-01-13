@@ -1,0 +1,209 @@
+/* ===== POPUP ===== */
+.profile-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  z-index: 9999;
+  overflow-y: auto;
+}
+
+.profile-popup {
+  max-width: 960px;
+  margin: 80px auto;
+  background: #fff;
+  padding: 32px;
+  border-radius: 30px;
+}
+
+/* ===== LAYOUT ===== */
+.biodata-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 32px;
+  align-items: start;
+  border-radius: 30px; /*  ss*/
+}
+
+/* ===== KOLOM KIRI ===== */
+.biodata-left {
+  text-align: center;
+}
+
+/* FOTO — TERKUNCI UKURANNYA */
+.biodata-photo-frame {
+  width: 100%;
+  max-width: 260px;
+  aspect-ratio: 3 / 4;
+  margin: 0 auto 16px;
+  overflow: hidden;
+  background: #eee;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+  border-radius: 20px; /*  */
+
+  /* animasi masuk */
+  opacity: 0;
+  transform: translateY(12px);
+  animation: photoIn 0.6s ease forwards;
+}
+
+.biodata-photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* animasi HALUS, TANPA SCALE */
+@keyframes photoIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.biodata-name {
+  font-size: 20px;
+  margin: 8px 0 4px;
+  color: #0f5132;
+}
+
+.biodata-role {
+  font-size: 13px;
+  color: #029f49;
+  font-weight: 600;
+}
+
+/* ===== KOLOM KANAN ===== */
+.biodata-right p {
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 14px;
+  color: #333;
+}
+
+.biodata-back {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #0f5132;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 30px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .biodata-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-popup {
+    margin: 40px 12px;
+    padding: 20px;
+  }
+
+  .biodata-back {
+    width: 100%;
+  }
+}
+
+/* ============================================================================ */
+/* ===== PRAKTIK & KARYA POPUP ===== */
+.praktikkaryapopup-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 32px;
+}
+
+/* KOLOM KIRI */
+.praktikkaryapopup-left {
+  text-align: center;
+}
+
+.praktikkaryapopup-cover {
+  width: 100%;
+  max-width: 260px;
+  aspect-ratio: 3 / 4;
+  margin: 0 auto 16px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+.praktikkaryapopup-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.praktikkaryapopup-title {
+  font-size: 20px;
+  color: #0f5132;
+  margin-bottom: 4px;
+}
+
+.praktikkaryapopup-subtitle {
+  font-size: 14px;
+  color: #029f49;
+  font-weight: 600;
+}
+
+/* KOLOM KANAN */
+.praktikkaryapopup-desc {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  color: #333;
+}
+
+.praktikkaryapopup-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.praktikkaryapopup-list li {
+  margin-bottom: 12px;
+}
+
+.praktikkaryapopup-list a {
+  display: block;
+  padding: 12px 18px;
+  background: #f4fdf8;
+  border-radius: 14px;
+  color: #0f5132;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid rgba(15, 81, 50, 0.15);
+  transition: all 0.25s ease;
+}
+
+.praktikkaryapopup-list a:hover {
+  background: #029f49;
+  color: #fff;
+}
+
+.praktikkaryapopup-back {
+  margin-top: 24px;
+  padding: 12px 26px;
+  background: #0f5132;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .praktikkaryapopup-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .praktikkaryapopup-back {
+    width: 100%;
+  }
+}

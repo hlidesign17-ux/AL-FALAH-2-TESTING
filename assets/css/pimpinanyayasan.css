@@ -1,0 +1,162 @@
+.pimpinanlanjut-section {
+  padding: 40px 20px;
+  background: linear-gradient(180deg, #ffffff, #eaf6ef);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.pimpinanlanjut-breadcrumb {
+  max-width: 1100px;
+  margin: 0 auto 25px;
+  font-size: 14px;
+  color: #555;
+}
+
+.pimpinanlanjut-breadcrumb a {
+  color: #029f49;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.pimpinanlanjut-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.pimpinanlanjut-wrapper {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+}
+
+/* Kolom 1 */
+.pimpinanlanjut-sidebar {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pimpinanlanjut-btn {
+  padding: 14px 18px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(15, 81, 50, 0.15);
+  color: #0f5132;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pimpinanlanjut-btn:hover {
+  background: #029f49;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.pimpinanlanjut-btn.active {
+  background: #0f5132;
+  color: #fff;
+}
+
+/* Kolom 2 */
+.pimpinanlanjut-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.pimpinanlanjut-content {
+  flex: 1;
+}
+
+.pimpinanlanjut-title {
+  grid-area: title;
+  margin-bottom: 0;
+}
+
+.pimpinanlanjut-card {
+  width: 280px;
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 18px;
+  padding: 18px;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card */
+.pimpinanlanjut-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 280px);
+  gap: 25px;
+  justify-content: start; /* kiri */
+}
+
+.pimpinanlanjut-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: top; /* ⬅️ ini kuncinya */
+  border-radius: 14px;
+  margin-bottom: 15px;
+}
+
+.pimpinanlanjut-info {
+  text-align: center;
+}
+
+.pimpinanlanjut-info h3 {
+  font-size: 18px;
+  color: #0f5132;
+  margin-bottom: 6px;
+  transition: font-size 0.3s ease;
+}
+
+.pimpinanlanjut-info p {
+  font-size: 14px;
+  color: #029f49;
+  font-weight: 600;
+}
+
+.pimpinanlanjut-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(2, 159, 73, 0.25);
+}
+
+/* PIMPINAN YAYASAN MOBILE */
+@media screen and (max-width: 768px) {
+  .pimpinanlanjut-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Sidebar di atas dan bisa scroll horizontal */
+  .pimpinanlanjut-sidebar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 10px;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #0f5132 transparent; /* thumb | track */
+  }
+
+  .pimpinanlanjut-btn {
+    flex: 0 0 auto; /* supaya tidak mengecil saat scroll */
+  }
+
+  /* Grid menjadi vertikal */
+  .pimpinanlanjut-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .pimpinanlanjut-card {
+    width: 100%;
+  }
+}

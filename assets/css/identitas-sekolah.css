@@ -1,0 +1,289 @@
+/* CSS INI BERISIKAN CSS UNTUK IDENTITAS SEKOLAH, VISI MISI, PROFIL PIMPINAN */
+/* HOVER EFFECT DESKTOP */
+@media (hover: hover) {
+  .pimpinan-card {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    border: 1px solid rgba(15, 81, 50, 0.08);
+    
+  }
+
+  .pimpinan-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.15);
+  }
+
+  .pimpinan-card:hover img {
+    transform: scale(1.05);
+  }
+
+  .pimpinan-photo img {
+    transition: transform 0.5s ease;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.identitas {
+  background: linear-gradient(
+    180deg,
+    rgba(15, 81, 50, 0.06),
+    rgba(255, 255, 255, 1)
+  );
+
+  border-radius: 32px 32px 0 0;
+  margin-top: -60px; /* nyambung ke section sebelumnya */
+  padding: 80px 16px;
+}
+
+.identitas-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 24px;
+
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+
+  border-radius: 24px;
+
+  box-shadow: 0 20px 40px rgba(15, 81, 50, 0.08),
+    0 6px 12px rgba(15, 81, 50, 0.05);
+}
+
+.identitas-title {
+  text-align: center;
+  font-size: clamp(24px, 5vw, 32px);
+  margin-bottom: 32px;
+  color: #0f5132;
+}
+
+.identitas-list p {
+  font-size: clamp(15px, 4vw, 18px);
+  line-height: 1.8;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.identitas-list strong {
+  color: #0f5132;
+}
+
+/* BAGIAN VISI MISI */
+.visi-misi {
+  background: linear-gradient(
+    180deg,
+    rgba(15, 81, 50, 0.06),
+    rgba(255, 255, 255, 1)
+  );
+
+  border-radius: 32px 32px 0 0;
+  margin-top: -60px;
+  padding: 80px 16px;
+}
+
+.visi-misi-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 48px 28px;
+
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+
+  border-radius: 24px;
+
+  box-shadow: 0 20px 40px rgba(15, 81, 50, 0.08),
+    0 6px 12px rgba(15, 81, 50, 0.05);
+}
+
+.visi-misi-title {
+  text-align: center;
+  font-size: clamp(24px, 5vw, 32px);
+  margin-bottom: 40px;
+  color: #0f5132;
+}
+
+.visi-misi-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+}
+
+.visi h3,
+.misi h3 {
+  font-size: clamp(20px, 4.5vw, 24px);
+  margin-bottom: 12px;
+  color: #0f5132;
+}
+
+.visi p {
+  font-size: clamp(15px, 4vw, 18px);
+  line-height: 1.8;
+  color: #333;
+}
+
+.misi ul {
+  padding-left: 20px;
+}
+
+.misi li {
+  font-size: clamp(15px, 4vw, 18px);
+  line-height: 1.8;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* BAGIAN PIMPINAN SEKOLAH======================================================== */
+/* ===== SECTION UTAMA ===== */
+/* BAGIAN PIMPINAN SEKOLAH======================================================== */
+/* ===== SECTION UTAMA ===== */
+/* ===== SECTION ===== */
+/* WARNA TEKS CARD */
+.pimpinan-card .pimpinan-nama {
+  color: #0f5132;
+  font-weight: 600;
+}
+
+.pimpinan-card .pimpinan-jabatan {
+  color: #666;
+}
+
+.pimpinan-section {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  /* background: #ffffff; */
+  border-radius: 40px 40px 0 0;
+  background: linear-gradient(180deg, rgba(15, 81, 50, 0.04), #ffffff);
+}
+
+.pimpinan-wrapper {
+  /* background: #fff; */
+  border-radius: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+
+  padding-bottom: 80px;
+  background: #fff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.pimpinan-title {
+  font-size: clamp(24px, 5vw, 32px);
+  color: #0f5132;
+  margin-bottom: 30px;
+}
+
+/* DESKTOP GRID */
+.pimpinan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
+  justify-content: center;
+  gap: 32px;
+}
+
+.pimpinan-card {
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.pimpinan-photo {
+  height: 50vh;
+  max-height: 420px;
+}
+
+.pimpinan-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease, filter 0.6s ease;
+  object-position: top; /* ⬅️ INI FIX UTAMA */
+}
+
+.pimpinan-info {
+  padding: 20px;
+}
+
+.pimpinan-dots {
+  display: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .pimpinan-section {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    background: #ffffff;
+    border-radius: 40px 40px 0 0;
+  }
+
+  .pimpinan-wrapper {
+    /* background-color: #ffffff; */ /* hapus nanti */
+    margin-top: -20px;
+    padding-bottom: 100px;
+    background: #fff;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  /* CAROUSEL */
+  .pimpinan-grid.pimpinan-carousel {
+    display: flex !important;
+    flex-wrap: nowrap;
+    justify-content: flex-start !important;
+    margin-top: -30px; /* dd */
+    margin-bottom: -30px;
+    overflow-x: auto;
+    gap: 16px;
+
+    /* padding: 0 16px; */
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 30px;
+
+    scroll-snap-type: x mandatory;
+    scroll-padding: 16px; /* ⬅️ penting */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .pimpinan-photo {
+    height: 50vh;
+    max-height: 300px;
+  }
+
+  .pimpinan-grid.pimpinan-carousel .pimpinan-card {
+    flex: 0 0 calc(100% - 32px);
+    scroll-snap-align: center; /* ⬅️ FIX UTAMA */
+  }
+
+  .pimpinan-grid.pimpinan-carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .pimpinan-grid.pimpinan-carousel .pimpinan-card {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+  }
+
+  /* DOT */
+  .pimpinan-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  .pimpinan-dots button {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    background: #ccc;
+  }
+
+  .pimpinan-dots button.active {
+    background: #0f5132;
+  }
+}

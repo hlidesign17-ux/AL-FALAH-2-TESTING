@@ -1,0 +1,181 @@
+/* ============================= */
+/* KONTAK SECTION */
+/* ============================= */
+
+.kontak-section {
+  background: linear-gradient(135deg, #0f5132, #029f49);
+  padding: 80px 20px;
+  color: #fff;
+}
+
+.kontak-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.kontak-title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.kontak-subtitle {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 50px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.kontak-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* MAPS */
+.kontak-maps iframe {
+  width: 100%;
+  height: 380px;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* INFO PANEL */
+.kontak-info {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.kontak-card {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+
+  padding: 16px 20px;
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.kontak-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+}
+
+.kontak-card span {
+  font-size: 1.8rem;
+}
+
+.kontak-card h4 {
+  margin-bottom: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.kontak-card p,
+.kontak-card a {
+  font-size: 0.95rem;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.kontak-card a:hover {
+  text-decoration: underline;
+}
+
+/* VISITOR */
+.kontak-visitor {
+  margin-top: 28px;
+  padding: 14px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.kontak-visitor span {
+  font-size: 0.9rem;
+  color: #ffffff;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.kontak-visitor img {
+  height: 28px;
+  filter: brightness(1.1) contrast(1.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .kontak-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kontak-maps iframe {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kontak-section {
+    margin-top: 20px;
+    border-radius: 28px;
+    padding: 50px 14px;
+  }
+
+  .kontak-container {
+    background: linear-gradient(135deg, #0f5132, #029f49);
+    border-radius: 28px;
+    padding: 30px 18px 40px;
+
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+  }
+
+  .kontak-title {
+    font-size: 1.8rem;
+  }
+
+  .kontak-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 32px;
+  }
+
+  .kontak-maps iframe {
+    height: 240px;
+    border-radius: 20px;
+  }
+
+  .kontak-info {
+    gap: 14px;
+  }
+
+  .kontak-card {
+    border-radius: 18px;
+    padding: 14px 16px;
+  }
+
+  .kontak-card span {
+    font-size: 1.5rem;
+  }
+
+  .kontak-visitor {
+    border-radius: 999px;
+    padding: 12px 16px;
+  }
+}

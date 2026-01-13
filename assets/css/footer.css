@@ -1,0 +1,41 @@
+.site-footer {
+  padding: 2.5rem 1rem 2rem;
+  text-align: center;
+
+  background: linear-gradient(
+    135deg,
+    rgba(246, 248, 251, 1),
+    rgba(238, 242, 246, 1)
+  );
+
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+  letter-spacing: 0.2px;
+}
+
+.footer-highlight {
+  display: inline-block;
+  margin-top: 0.3rem;
+
+  font-weight: 600;
+  color: rgb(15, 81, 50);
+  position: relative;
+}
+
+/* aksen modern tipis */
+.footer-highlight::after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 2px;
+  margin: 0.35rem auto 0;
+  background: linear-gradient(90deg, #0f5132, #029f49);
+  border-radius: 2px;
+  opacity: 0.8;
+}

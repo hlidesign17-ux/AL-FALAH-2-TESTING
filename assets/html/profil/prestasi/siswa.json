@@ -1,0 +1,216 @@
+[
+  {
+    "id": "elza",
+    "nama": "Elza Nadhira Almahyra",
+    "foto": "../../../img/profil/prestasi/prestasi-siswa/elza-nadhira-almahyra.jpg",
+    "prestasi": {
+      "nasional": [
+        "Juara 1 Olimpiade Sains MTK (2025)",
+        "Juara 1 Olimpiade Sains Bahasa Indonesia (2025)",
+        "Juara 2 Olimpiade Sains Bahasa Inggris (2025)"
+      ],
+      "provinsi": ["Juara 1 Olimpiade Sains MTK Provinsi (2025)"]
+    }
+  },
+
+  {
+    "id": "kanaya",
+    "nama": "Kanaya Aqsa Zhafira",
+    "foto": "../../../img/profil/prestasi/prestasi-siswa/kanaya-aqsa-zhafira.jpg",
+    "prestasi": {
+      "nasional": ["Juara 2 Olimpiade IPA Nasional (2025)"],
+      "provinsi": ["Juara 1 Lomba Sains Provinsi (2025)"]
+    }
+  },
+
+  {
+    "id": "aisyah",
+    "nama": "Aisyah Nur Hafizah",
+    "foto": "../../../img/profil/prestasi/prestasi-siswa/aisyah-nur-hafizah.jpg",
+    "prestasi": {
+      "nasional": ["Juara 1 Olimpiade MTK Nasional (2025)"],
+      "provinsi": ["Juara 2 Sains Provinsi (2025)"]
+    }
+  },
+  {
+    "id": "alvaro",
+    "nama": "Alvaro Rizky Pratama",
+    "foto": "../../../img/profil/prestasi/prestasi-siswa/alvaro-rizky-pratama.jpg",
+    "prestasi": {
+      "nasional": ["Juara 3 Olimpiade IPA Nasional (2025)"],
+      "provinsi": ["Juara 1 IPA Provinsi (2025)"]
+    }
+  },
+  {
+    "id": "amira",
+    "nama": "Amira Zahra Putri",
+    "foto": "../../../img/profil/prestasi/prestasi-siswa/amira-zahra-putri.jpg",
+    "prestasi": {
+      "nasional": ["Juara 2 Bahasa Inggris Nasional (2025)"],
+      "provinsi": ["Juara 1 Bahasa Inggris Provinsi (2025)"]
+    }
+  },
+  {
+    "id": "andhika",
+    "nama": "Andhika Pratama",
+    "foto": "../../../img/profil/prestasi/prestasi-siswa/andhika-pratama.jpg",
+    "prestasi": {
+      "nasional": ["Juara 1 Olimpiade IPA Nasional (2025)"],
+      "provinsi": ["Juara 2 IPA Provinsi (2025)"]
+    }
+  },
+  {
+    "id": "aulia",
+    "nama": "Aulia Rahma Salsabila",
+    "foto": "../../../img/profil/prestasi/prestasi-siswa/aulia-rahma-salsabila.jpg",
+    "prestasi": {
+      "nasional": ["Juara 3 Matematika Nasional (2025)"],
+      "provinsi": ["Juara 1 MTK Provinsi (2025)"]
+    }
+  },
+  {
+    "id": "bintang",
+    "nama": "Bintang Adi Saputra",
+    "foto": "../../../img/profil/prestasi/prestasi-siswa/bintang-adi-saputra.jpg",
+    "prestasi": {
+      "nasional": ["Juara 2 IPA Nasional (2025)"],
+      "provinsi": ["Juara 2 IPA Provinsi (2025)"]
+    }
+  },
+  {
+    "id": "calista",
+    "nama": "Calista Aurelia",
+    "foto": "../../../img/profil/prestasi/prestasi-siswa/calista-aurelia.jpg",
+    "prestasi": {
+      "nasional": ["Juara 1 Bahasa Indonesia Nasional (2025)"],
+      "provinsi": ["Juara 1 B. Indonesia Provinsi (2025)"]
+    }
+  },
+  {
+    "id": "dafa",
+    "nama": "Dafa Mahendra",
+    "foto": "../../../img/profil/prestasi/prestasi-siswa/dafa-mahendra.jpg",
+    "prestasi": {
+      "nasional": ["Juara 3 Olimpiade IPA Nasional (2025)"],
+      "provinsi": ["Juara 2 IPA Provinsi (2025)"]
+    }
+  },
+  {
+    "id": "dinda",
+    "nama": "Dinda Puspita Sari",
+    "foto": "../../../img/profil/prestasi/prestasi-siswa/dinda-puspita-sari.jpg",
+    "prestasi": {
+      "nasional": ["Juara 2 Bahasa Inggris Nasional (2025)"],
+      "provinsi": ["Juara 1 Bahasa Inggris Provinsi (2025)"]
+    }
+  },
+  {
+    "id": "elza",
+    "nama": "Elza Nadhira Almahyra",
+    "foto": "../../../img/profil/prestasi/prestasi-siswa/elza-nadhira-almahyra.jpg",
+    "prestasi": {
+      "nasional": [
+        "Juara 1 Olimpiade Sains MTK (2025)",
+        "Juara 1 Olimpiade Sains Bahasa Indonesia (2025)",
+        "Juara 2 Olimpiade Sains Bahasa Inggris (2025)"
+      ],
+      "provinsi": ["Juara 1 Olimpiade Sains MTK Provinsi (2025)"]
+    }
+  },
+
+  {
+    "id": "fahri",
+    "nama": "Fahri Ramadhan",
+    "foto": "../../../img/profil/prestasi/prestasi-siswa/fahri-ramadhan.jpg",
+    "prestasi": {
+      "nasional": ["Juara 3 Matematika Nasional (2025)"],
+      "provinsi": ["Juara 2 MTK Provinsi (2025)"]
+    }
+  },
+  {
+    "id": "fara",
+    "nama": "Fara Nabila",
+    "foto": "../../../img/profil/prestasi/prestasi-siswa/fara-nabila.jpg",
+    "prestasi": {
+      "nasional": ["Juara 2 Bahasa Indonesia Nasional (2025)"],
+      "provinsi": ["Juara 1 B. Indonesia Provinsi (2025)"]
+    }
+  },
+  {
+    "id": "galang",
+    "nama": "Galang Arya",
+    "foto": "../../../img/profil/prestasi/prestasi-siswa/galang-arya.jpg",
+    "prestasi": {
+      "nasional": ["Juara 1 IPA Nasional (2025)"],
+      "provinsi": ["Juara 1 IPA Provinsi (2025)"]
+    }
+  },
+  {
+    "id": "hafiz",
+    "nama": "Hafiz Alqodri",
+    "foto": "../../../img/profil/prestasi/prestasi-siswa/hafiz-alqodri.jpg",
+    "prestasi": {
+      "nasional": ["Juara 3 Olimpiade MTK Nasional (2025)"],
+      "provinsi": ["Juara 2 MTK Provinsi (2025)"]
+    }
+  },
+  {
+    "id": "ilham",
+    "nama": "Ilham Fauzan",
+    "foto": "../../../img/profil/prestasi/prestasi-siswa/ilham-fauzan.jpg",
+    "prestasi": {
+      "nasional": ["Juara 1 Bahasa Inggris Nasional (2025)"],
+      "provinsi": ["Juara 1 B. Inggris Provinsi (2025)"]
+    }
+  },
+
+  {
+    "id": "kanaya",
+    "nama": "Kanaya Aqsa Zhafira",
+    "foto": "../../../img/profil/prestasi/prestasi-siswa/kanaya-aqsa-zhafira.jpg",
+    "prestasi": {
+      "nasional": ["Juara 2 IPA Nasional (2025)"],
+      "provinsi": ["Juara 1 IPA Provinsi (2025)"]
+    }
+  },
+
+  {
+    "id": "kevin",
+    "nama": "Kevin Ardiansyah",
+    "foto": "../../../img/profil/prestasi/prestasi-siswa/kevin-ardiansyah.jpg",
+    "prestasi": {
+      "nasional": ["Juara 3 MTK Nasional (2025)"],
+      "provinsi": ["Juara 2 MTK Provinsi (2025)"]
+    }
+  },
+
+  {
+    "id": "livia",
+    "nama": "Livia Putri",
+    "foto": "../../../img/profil/prestasi/prestasi-siswa/livia-putri.jpg",
+    "prestasi": {
+      "nasional": ["Juara 2 Bahasa Indonesia Nasional (2025)"],
+      "provinsi": ["Juara 1 B. Indonesia Provinsi (2025)"]
+    }
+  },
+
+  {
+    "id": "mika",
+    "nama": "Mikael Pradipta",
+    "foto": "../../../img/profil/prestasi/prestasi-siswa/mikael-pradipta.jpg",
+    "prestasi": {
+      "nasional": ["Juara 1 IPA Nasional (2025)"],
+      "provinsi": ["Juara 1 IPA Provinsi (2025)"]
+    }
+  },
+
+  {
+    "id": "nadia",
+    "nama": "Nadia Salsabila",
+    "foto": "../../../img/profil/prestasi/prestasi-siswa/nadia-salsabila.jpg",
+    "prestasi": {
+      "nasional": ["Juara 3 Bahasa Inggris Nasional (2025)"],
+      "provinsi": ["Juara 2 B. Inggris Provinsi (2025)"]
+    }
+  }
+]

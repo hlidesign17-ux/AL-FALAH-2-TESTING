@@ -1,0 +1,122 @@
+.beritalanjut-section {
+  padding: 40px 20px;
+  background: linear-gradient(180deg, #ffffff, #eaf6ef);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Breadcrumb */
+.beritalanjut-breadcrumb {
+  max-width: 1100px;
+  margin: 0 auto 25px;
+  font-size: 14px;
+  color: #555;
+}
+
+.beritalanjut-breadcrumb a {
+  color: #029f49;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Wrapper */
+.beritalanjut-wrapper {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+}
+
+/* Sidebar */
+.beritalanjut-sidebar {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.beritalanjut-btn {
+  padding: 14px 18px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(15, 81, 50, 0.15);
+  color: #0f5132;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.beritalanjut-btn:hover,
+.beritalanjut-btn.active {
+  background: #0f5132;
+  color: #fff;
+}
+
+/* Content */
+.beritalanjut-content {
+  flex: 1;
+}
+
+.beritalanjut-title {
+  margin-bottom: 20px;
+  color: #0f5132;
+}
+
+/* List */
+.beritalanjut-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.beritalanjut-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.beritalanjut-link {
+  display: block;
+  padding: 16px 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.25s ease;
+}
+
+.beritalanjut-link:hover {
+  background: rgba(2, 159, 73, 0.08);
+}
+
+.beritalanjut-kategori {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #029f49;
+  margin-bottom: 6px;
+}
+
+.beritalanjut-link h3 {
+  font-size: 18px;
+  margin: 4px 0 6px;
+  color: #0f5132;
+}
+
+.beritalanjut-link time {
+  font-size: 13px;
+  color: #666;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .beritalanjut-wrapper {
+    flex-direction: column;
+  }
+
+  .beritalanjut-sidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 10px;
+  }
+
+  .beritalanjut-btn {
+    flex: 0 0 auto;
+  }
+}
