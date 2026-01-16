@@ -1,0 +1,162 @@
+/* ===== OVERLAY ===== */
+#notifikasi {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+}
+
+/* ===== BOX UTAMA ===== */
+.notifikasi-box {
+  background: #ffffff;
+  border-radius: 16px;
+
+  max-width: 560px;
+  margin: 12px;
+  overflow: hidden;
+
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* ===== KEPALA KOLOM / HEADER ===== */
+.notifikasi-header {
+  background: linear-gradient(135deg, #0f5132, #029f49);
+  color: white;
+
+  padding: 16px;
+  text-align: center;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ===== ISI ===== */
+.notifikasi-body {
+  padding: 18px 22px;
+  color: #0f5132;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.notifikasi-body p {
+  margin: 10px 0;
+}
+
+/* ===== CLOSE BUTTON ===== */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 30px;
+  height: 30px;
+
+  background: white;
+  color: #0f5132;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.close-btn:hover {
+  background: #f1f1f1;
+  transform: scale(1.05);
+}
+
+/* ===== BOX KONTAK ===== */
+.kontak-box {
+  background: #f4faf6;
+  border-left: 4px solid #0f5132;
+
+  padding: 10px;
+  margin-top: 12px;
+
+  border-radius: 8px;
+}
+
+/* ANIMASI */
+.fade-in {
+  animation: fadeIn 0.3s;
+}
+
+.fade-out {
+  animation: fadeOut 0.3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+
+/* ===== RESPONSIVE MOBILE & TABLET ===== */
+@media (max-width: 768px) {
+
+  .notifikasi-box {
+    max-width: 94%;
+    margin: 12px;
+    border-radius: 14px;
+  }
+
+  .notifikasi-header {
+    font-size: 16px;
+    padding: 14px;
+  }
+
+  .notifikasi-body {
+    font-size: 14px;
+    padding: 14px 16px;
+  }
+
+  .notifikasi-body p {
+    margin: 8px 0;
+  }
+
+  .close-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+
+    top: 8px;
+    right: 8px;
+  }
+
+  .kontak-box {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+}
