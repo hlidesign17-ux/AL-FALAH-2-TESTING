@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="../../css/popus.css" />
     <link rel="stylesheet" href="../../css/beritalanjut.css" />
     <link rel="stylesheet" href="../../css/popup-berita.css" />
+    <link rel="stylesheet" href="../../css/pengumuman.css" />
+
 
     <!-- ============================================================================CSS CLOSING======================================== -->
     <!-- ============================================================================FONT OPENING======================================= -->
@@ -123,43 +125,29 @@
           <a href="kegiatan-sekolah.html#beritalanjut" class="beritalanjut-btn"
             >Kegiatan Sekolah</a
           >
-          <a
-            href="informasi-prestasi.html#beritalanjut"
-            class="beritalanjut-btn"
-            >Informasi Prestasi</a
-          >
+          
         </div>
 
-        <!-- Content -->
-        <div class="beritalanjut-content">
-          <h2 class="beritalanjut-title">Pengumuman Sekolah</h2>
+        <!-- KONTEN OPENING -->
+         <!-- KONTEN OPENING -->
 
-          <ul class="beritalanjut-list">
-            <li class="beritalanjut-item">
-              <a
-                href="#"
-                class="beritalanjut-link"
-                data-target="pengumuman-sekolah/pengumuman-sekolah-2.html"
-              >
-                <span class="beritalanjut-kategori">Pengumuman</span>
-                <h3>Pelaksanaan Tes SPMB Gelombang Pertama</h3>
-                <time>12 Januari 2026</time>
-              </a>
-            </li>
+<div class="pengumuman-wrapper" id="pengumuman">
+  <div class="pengumuman-list"></div>
+  <div class="pengumuman-pagination"></div>
+</div>
 
-            <li class="beritalanjut-item">
-              <a
-                href="#"
-                class="beritalanjut-link"
-                data-target="pengumuman-sekolah/pengumuman-sekolah-1.html"
-              >
-                <span class="beritalanjut-kategori">Akademik</span>
-                <h3>Jadwal Masuk Semester 2 Tahun 2025/2026</h3>
-                <time>5 Januari 2026</time>
-              </a>
-            </li>
-          </ul>
-        </div>
+<!-- popup khusus pengumuman -->
+<div class="pengumuman-popup-overlay" id="pengumumanPopup" style="display:none">
+  <div class="pengumuman-popup-content">
+    <div class="pengumuman-popup-body"></div>
+  </div>
+</div>
+
+<!-- KONTEN CLOSING -->
+
+
+
+        <!-- KONTEN CLOSING -->
       </div>
     </section>
 
@@ -235,6 +223,16 @@
     <script src="../../js/shuffle.js"></script>
     <script src="../../js/popup.js"></script>
     <script src="../../js/popup-berita.js"></script>
+
+
+    <script src="../../js/pengumuman.js"></script>
+
+<script>
+  new PengumumanApp({
+    containerId: "pengumuman",
+    jsonUrl: "pengumuman.json"
+  });
+</script>
 
     <!-- memanggil hero.js -->
   </body>

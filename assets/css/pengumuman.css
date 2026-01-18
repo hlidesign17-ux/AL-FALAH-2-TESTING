@@ -1,0 +1,140 @@
+/* ===== LIST ===== */
+.pengumuman-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pengumuman-item {
+  background: #f6f8fb;
+  border-left: 4px solid #0f5132;
+  border-radius: 10px;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: .25s ease;
+}
+
+.pengumuman-item:hover {
+  background: #eaf1ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+
+.pengumuman-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.pengumuman-meta {
+  font-size: 13px;
+  color: #555;
+}
+
+.pengumuman-category {
+  background:#0f5132;
+  color:#fff;
+  padding:4px 10px;
+  border-radius:8px;
+  font-size:12px;
+  display:inline-block;
+}
+
+/* ===== PAGINATION ===== */
+.pengumuman-pagination {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pengumuman-pagination button {
+  min-width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  border: 1px solid rgba(15,81,50,.2);
+  background: #f4fdf8;
+  color: #0f5132;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pengumuman-pagination button.active {
+  background: #0f5132;
+  color: #fff;
+}
+
+/* ===== POPUP ===== */
+.pengumuman-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+  z-index: 9999;
+}
+
+.pengumuman-popup-content {
+  background: #fff;
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+  border-radius: 14px;
+  padding: 20px;
+  position: relative;
+  max-height: 90vh;
+  overflow: auto;
+}
+
+.pengumuman-popup-close {
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* slider sederhana */
+.pengumuman-slider {
+  position: relative;
+  text-align: center;
+}
+
+.pengumuman-slider img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.pengumuman-slide-btn {
+  position: absolute;
+  top: 45%;
+  background: #0f5132;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.pengumuman-prev { left: 0; }
+.pengumuman-next { right: 0; }
+
+.pengumuman-btn-close {
+  background: #0f5132;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: .2s;
+}
+
+.pengumuman-btn-close:hover {
+  background: #029f49;
+}
+
+.pengumuman-narasi p {
+  margin-bottom: 14px;       /* jarak antar paragraf */
+}
+
+.pengumuman-narasi p:empty {
+  height: 16px;              /* agar <p></p> tetap dianggap spasi */
+  margin-bottom: 16px;
+}

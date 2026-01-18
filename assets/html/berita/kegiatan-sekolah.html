@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../../css/popus.css" />
     <link rel="stylesheet" href="../../css/beritalanjut.css" />
     <link rel="stylesheet" href="../../css/popup-berita.css" />
+    <link rel="stylesheet" href="../../css/pengumuman.css" />
 
     <!-- ============================================================================CSS CLOSING======================================== -->
     <!-- ============================================================================FONT OPENING======================================= -->
@@ -96,7 +97,7 @@
       ></div>
 
       <div class="hero-overlay"></div>
-      s
+      
 
       <div class="hero-content">
         <img src="../../img/beranda/logonavbar.png" class="hero-logo" />
@@ -126,43 +127,21 @@
             class="beritalanjut-btn active"
             >Kegiatan Sekolah</a
           >
-          <a
-            href="informasi-prestasi.html#beritalanjut"
-            class="beritalanjut-btn"
-            >Informasi Prestasi</a
           >
         </div>
+<div class="pengumuman-wrapper" id="kegiatan">
+  <div class="pengumuman-list"></div>
+  <div class="pengumuman-pagination"></div>
+</div>
 
+<!-- popup khusus pengumuman -->
+<div class="pengumuman-popup-overlay" id="pengumumanPopup" style="display:none">
+  <div class="pengumuman-popup-content">
+    <div class="pengumuman-popup-body"></div>
+  </div>
+</div>
         <!-- Content -->
-        <div class="beritalanjut-content">
-          <h2 class="beritalanjut-title">Kegiatan Sekolah</h2>
-
-          <ul class="beritalanjut-list">
-            <li class="beritalanjut-item">
-              <a
-                href="#"
-                class="beritalanjut-link"
-                data-target="kegiatan-sekolah/kegiatan-sekolah-2.html"
-              >
-                <span class="beritalanjut-kategori">Pengumuman</span>
-                <h3>Kegiatan 2</h3>
-                <time>12 Januari 2026</time>
-              </a>
-            </li>
-
-            <li class="beritalanjut-item">
-              <a
-                href="#"
-                class="beritalanjut-link"
-                data-target="kegiatan-sekolah/kegiatan-sekolah-1.html"
-              >
-                <span class="beritalanjut-kategori">Akademik</span>
-                <h3>Kegiatan 1</h3>
-                <time>5 Januari 2026</time>
-              </a>
-            </li>
-          </ul>
-        </div>
+        
       </div>
     </section>
 
@@ -238,6 +217,15 @@
     <script src="../../js/shuffle.js"></script>
     <script src="../../js/popup.js"></script>
     <script src="../../js/popup-berita.js"></script>
+
+    <script src="../../js/pengumuman.js"></script>
+
+<script>
+  new PengumumanApp({
+    containerId: "kegiatan",
+    jsonUrl: "kegiatan.json"
+  });
+</script>
 
     <!-- memanggil hero.js -->
   </body>
