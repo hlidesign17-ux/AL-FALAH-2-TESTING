@@ -1,6 +1,8 @@
 .hero {
   position: relative;
-  height: 90vh;
+  width: 100%;
+  /*  */
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -19,7 +21,7 @@
   inset: 0;
 
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
 
   transition: background-image 1.2s ease-in-out;
@@ -41,15 +43,14 @@
 .hero-content {
   position: relative;
   z-index: 2;
-
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   color: white;
   text-align: center;
+  transform: translateY(-200px);
 }
 
 /* LOGO */
@@ -83,5 +84,20 @@
 @media (max-width: 768px) {
   .hero {
     border-radius: 0 0 40px 40px; /* membuat sudut hero ada kurva nya */
+    position: relative;
+    width: 100%;
+    height: 80svh;
+    overflow: hidden;
+  }
+
+  .hero-slide {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    transition: background-image 1.2s ease-in-out;
   }
 }
